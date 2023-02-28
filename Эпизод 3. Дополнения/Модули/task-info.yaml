@@ -1,0 +1,19 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  text: |
+    import math
+    import random as rd
+    from math import factorial
+
+    print(math.pi)
+    print(rd.randint(1, 5))
+    print(factorial(4))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+record: -1
+post_submission_on_open: true

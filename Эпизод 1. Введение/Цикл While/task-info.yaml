@@ -1,0 +1,41 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  text: |
+    # Пример цикла while
+
+    num = 0
+    n = int(input('Введите n '))
+    while num <= n:
+        print(num)
+        num = num + 1
+    print("--------")
+
+    # пример работы оператора break
+    num = 0
+    n = int(input('Введите n '))
+    while num <= n:
+        print(num)
+        if num == 10:
+            break
+        num = num + 1  # данную строчку можно изменить на num+=1
+
+    # пример работы оператора continue
+
+    num = 0
+    n = int(input('Введите n '))
+
+    while num <= n:
+        if num % 2 == 0:
+            num += 1
+            continue
+        print(num)
+        num += 1
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+record: -1
+post_submission_on_open: true

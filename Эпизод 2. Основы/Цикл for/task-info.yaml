@@ -1,0 +1,33 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  text: |
+    # работа цикла for с списком
+    group = ['Sam', 'John', 'Степан']
+
+    for man in group:
+        print(man)
+    # работа цикла for с строкой
+    my_str = "hello"
+
+    for letter in my_str:
+        print(letter)
+    # работа цикла for с кортежем
+    my_tuple = (1, 2, 3, 4)
+
+    for element in my_tuple:
+        print(element)
+
+    my_range = range(1, 10)
+    print(list(my_range))
+
+    for i in range(0, 50, 2):
+        print(i)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+record: -1
+post_submission_on_open: true

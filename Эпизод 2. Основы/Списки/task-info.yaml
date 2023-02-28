@@ -1,0 +1,24 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  text: |-
+    group_list = ['Sam', 'John', 'Степан']
+
+    print(group_list)
+
+    print(len(group_list))
+
+    group_list.append('Gary')
+    print(group_list)
+
+    print(group_list.pop())
+
+    print('John' in group_list)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+record: -1
+post_submission_on_open: true

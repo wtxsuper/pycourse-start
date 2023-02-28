@@ -1,0 +1,45 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  text: |
+    import mymodule
+    from myfolder.newmodule import number, d
+    import script
+
+    print(mymodule.number)
+    mymodule.d()
+
+    print(number)
+    d()
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: mymodule.py
+  visible: true
+  text: |2-
+
+    number = 10
+    def d():
+        print('Текст из нашего модуля')
+  learner_created: false
+- name: myfolder/newmodule.py
+  visible: true
+  text: |2-
+
+    number = 5
+    def d():
+        print('Текст из модуля лежащего в папке')
+  learner_created: false
+- name: script.py
+  visible: true
+  text: |2-
+
+    if __name__ == '__main__':
+        n = 7
+        print("Я скрипт")
+  learner_created: false
+status: Solved
+record: -1
+post_submission_on_open: true

@@ -1,0 +1,24 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  text: |
+    # Конкатенация
+    str_1 = "hello"
+    str_2 = "world"
+    print(str_1 + " " + str_2)
+
+    # %
+    name = "James"
+    print("hello %s" % name)
+
+    # format
+    last_name = "Bond"
+    print("hello {}".format(last_name))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+record: -1
+post_submission_on_open: true

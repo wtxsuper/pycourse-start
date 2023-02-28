@@ -1,0 +1,29 @@
+type: theory
+files:
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: main.py
+  visible: true
+  text: |
+    first_name = "Саша"
+    print(type(first_name))
+
+    #
+    age = 34
+    is_male = True
+    auto = None
+    #
+    print("преобразование типов")
+    number = 4
+    print(number)
+    print(type(number))
+
+    float_number = 4.0
+    print(float_number)
+    print(type(float_number))
+    print(int(float_number))
+  learner_created: false
+status: Solved
+record: -1
+post_submission_on_open: true

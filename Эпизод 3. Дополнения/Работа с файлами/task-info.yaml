@@ -1,0 +1,40 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  text: |
+    # чтение из файла
+    f = open('file1.txt', 'r')
+    print(f.read())
+    f.close()
+    # запись в файл
+    g = open('file2.txt', 'w')
+    g.write('hello\n')
+
+    g.writelines(['Hello\n', 'world\n'])
+    g.close()
+
+    # работа с конструкцией  with
+    with open('file1.txt', 'r') as f:
+        for line in f:
+            print(line.replace('\n', ''))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: file1.txt
+  visible: true
+  text: |-
+    Hello world!!!
+    I'm file!!!
+  learner_created: false
+- name: file2.txt
+  visible: true
+  text: |
+    hello
+    Hello
+    world
+  learner_created: false
+status: Solved
+record: -1
+post_submission_on_open: true

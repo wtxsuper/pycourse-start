@@ -1,0 +1,169 @@
+type: edu
+files:
+- name: task.py
+  visible: true
+  placeholders:
+  - offset: 43
+    length: 65
+    placeholder_text: '# TODO'
+    initial_state:
+      length: 6
+      offset: 30
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: '# TODO'
+  - offset: 157
+    length: 78
+    placeholder_text: '# TODO'
+    initial_state:
+      length: 6
+      offset: 83
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: '# TODO'
+  - offset: 281
+    length: 32
+    placeholder_text: '# TODO'
+    initial_state:
+      length: 6
+      offset: 133
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: '# TODO'
+  - offset: 362
+    length: 80
+    placeholder_text: '# TODO'
+    initial_state:
+      length: 6
+      offset: 186
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: '# TODO'
+  - offset: 491
+    length: 86
+    placeholder_text: '# TODO'
+    initial_state:
+      length: 6
+      offset: 239
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: '# TODO'
+  - offset: 623
+    length: 68
+    placeholder_text: '# TODO'
+    initial_state:
+      length: 6
+      offset: 289
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: '# TODO'
+  text: |
+    # Пример 1
+    def task_1(n):
+        # TODO
+        return
+
+
+    # Пример 2
+    def task_2(x, n):
+        # TODO
+        return
+
+
+    # Пример 3
+    def task_3(n):
+        # TODO
+        return
+
+
+    # Пример 4
+    def task_4(x, n):
+        # TODO
+        return
+
+
+    # Пример 5
+    def task_5(x, n):
+        # TODO
+        return
+
+
+    # Пример 6
+    def task_6(n):
+        # TODO
+        return
+  learner_created: false
+- name: tests/test_task.py
+  visible: false
+  text: |
+    import unittest
+    import math
+    import task
+
+
+    # todo: replace this with an actual test
+    class TestCase(unittest.TestCase):
+        def test_1(self):
+            n = 10
+            x = 0
+            for i in range(1, n + 1):
+                x += 1 / i
+            self.assertEqual(task.task_1(n), x)
+
+        def test_2(self):
+            n = 17
+            x = 0
+            y = 1
+            for i in range(1,n+1,2):
+                x += y/i
+            self.assertEqual(task.task_2(1,n), x)
+
+
+        def test_3(self):
+            n = 10
+            x = math.factorial(n)
+            self.assertEqual(task.task_3(n),x)
+
+        def test_4(self):
+            n = 9
+            x = 1
+            y = 1
+            for i in range(2,n+1):
+                x *= (y+i)/i
+            self.assertEqual(task.task_4(1,n), x)
+
+        def test_5(self):
+            n = 3
+            x = 0
+            y = 1
+            for i in range(1,n+1):
+                x += (y*i)/(2*i)
+            self.assertEqual(task.task_5(1,n), x)
+
+        def test_6(self):
+            def f(num):
+                z = 1
+                for i in range(2, num + 2, 2):
+                    z *= i
+                return z
+
+            n = 20
+            self.assertEqual(task.task_6(n), f(n))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: tests/__init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 28 Feb 2023 14:54:41 UTC"
+record: -1

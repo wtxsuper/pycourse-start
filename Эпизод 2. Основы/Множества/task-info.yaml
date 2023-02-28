@@ -1,0 +1,44 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  text: |
+    cars = ['BMW', 'Audi', 'Kia', 'Honda', 'BMW']
+    print(cars)
+    cars = set(cars)
+    print(cars)
+    print(type(cars))
+
+    # Добавление элемента
+    cars.add('Volvo')
+    print(cars)
+
+    # Удаление элемента
+    cars.remove('BMW')
+    print(cars)
+
+    # Длина множества
+    print(len(cars))
+
+    # Оператор in
+    print('Honda' in cars)
+
+    new_cars = {'Dodge', 'Hyundai', 'Volvo', 'Kia'}
+
+    # Объединение
+    print(cars | new_cars)
+
+    # Пересечение
+    print(cars & new_cars)
+
+    # Разность
+    print(cars - new_cars)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  time: "Tue, 14 Feb 2023 09:27:31 UTC"
+record: -1
+post_submission_on_open: true

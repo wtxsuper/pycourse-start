@@ -1,0 +1,17 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  text: |
+    # Создадим наш кортеж и посмотрим на него
+    my_tuple = (1, 2, 3, 4)
+    print(my_tuple)
+    # Попробуем изменить один элемент кортежа, должна появиться ошибка.
+    my_tuple[1] = 7
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+record: -1
+post_submission_on_open: true

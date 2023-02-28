@@ -1,0 +1,33 @@
+type: theory
+custom_name: Срезы. Методы.
+files:
+- name: main.py
+  visible: true
+  text: |
+    # Пример срезов
+    str = "Hello world!"
+
+    print(str[2:6])
+    print(str[:6])
+    print(str[4:])
+
+    # Примеры функций со строками
+
+    print(len(str))
+
+    print(str.find("world"))
+
+    print(str.split())
+
+    print(str.isdigit())
+
+    print(str.upper())
+
+    print(str.lower())
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+record: -1
+post_submission_on_open: true
